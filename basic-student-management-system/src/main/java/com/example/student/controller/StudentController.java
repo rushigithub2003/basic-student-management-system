@@ -30,18 +30,5 @@ public class StudentController {
 		return ss.getStudentById(id);
 	}
 	
-	@DeleteMapping("student/{id}")
-	String deleteStudentById(@PathVariable int id)
-	{
-		ss.deleteStudentById(id);
-		return "Student Deleted";
-	}
 	
-	@DeleteMapping("student")
-	String deleteAllStudent()
-	{
-		ss.deleteAllStudent();
-		return "All Student Deleted";
-	}
-
 }
